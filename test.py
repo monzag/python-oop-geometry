@@ -1,6 +1,7 @@
 import unittest
 import math
 from geometry import *
+from os import listdir
 
 
 class CircleTester(unittest.TestCase):
@@ -198,6 +199,12 @@ class ShapeListTester(unittest.TestCase):
         sl.add_shape(t)
         sl.add_shape(c)
         self.assertEqual(sl.get_largest_shape_by_area(), c)
+
+
+class UMLdiagramTester(unittest.TestCase):
+
+    def test_file_existence(self):
+        self.assertTrue('UML.png' in listdir(), msg="UML.png doesn't exist")
 
 
 def main():
