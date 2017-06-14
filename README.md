@@ -3,17 +3,19 @@ Do you love geometry? Our young friend Zigy (Zygfryd) loves it too. Unfortunatel
 
 But how?
 
-You'll write a Object Oriented Python Application to teach him geometry. Don't worry! Our Finnish software architect Linus Coolvalds has already created a boilerplate for you.
+You'll write a Object Oriented Python Application to teach him geometry. Don't worry! Our Finnish software architect Linus Coolvalds has already created a boilerplate for you. However he forgot to create a UML class diagram. You have to do it for him.
+
 
 # Requirements
 In order to help Zigy you have to:
-* Implement 6 classes in `geometry.py` module
-* Implement `main.py` module.
-* You are allowed to implement your own modules. Remember about clean code.
-* Explain why Linus designed some methods to be class methods instead of instance methods.
-* Remember about comments and docstrings.
-* All tests must pass.
-* Focus most on the OOP not the ui.
+- [ ] Implement 6 classes in `geometry.py` module
+- [ ] Implement `main.py` module.
+- [ ] You are allowed to implement your own modules. Remember about clean code.
+- [ ] Explain why Linus designed some methods to be class methods instead of instance methods.
+- [ ] Remember about comments and docstrings.
+- [ ] Add UML.png file containing UML class diagram of a geometry.py module
+- [ ] All tests must pass.
+- [ ] Focus most on the OOP not the ui.
 
 Hint: you can reuse code from the previous assignments.
 
@@ -243,5 +245,7 @@ Returns shape with largest area. Hint: have a look at [comparison methods]( http
 If you've fulfilled all the basic requirements and you're ambitious enough to continue, here's idea what you can do.
 
 Help Zigy even more and implement quiz feature. This feature should generate random shape. Tell the user the type of shape and it's attributes. The user should calculate the perimeter and area. The program should check users answer.
+
+Visualize shapes using [turtle](https://docs.python.org/3.6/library/turtle.html) module.
 
 You can also add more shapes to the geometry class.
