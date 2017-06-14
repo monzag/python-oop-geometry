@@ -12,7 +12,7 @@ class CircleTester(unittest.TestCase):
 
     def test_value_error(self):
         with self.assertRaises(ValueError,
-                               msg="Circle cannot have negative radius"):
+                               msg="Circle radius can't be negative"):
             Circle(-1)
 
     def test_area(self):
