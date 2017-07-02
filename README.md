@@ -80,7 +80,7 @@ Returns formula for the area of the shape as a string.
 Returns formula for the perimeter of the shape.
 
 Why this methods should be class methods? Edit this readme and give answer below:  
-...........................
+Because this method not use instance attributes so you don't need to create new object to calling the above methods.
 
 ### Circle Class
 This class represents circle shape.   
@@ -239,6 +239,65 @@ Returns shape with largest perimeter. Hint: have a look at [comparison methods](
 Returns shape with largest area. Hint: have a look at [comparison methods]( https://docs.python.org/3/reference/datamodel.html#object.__lt__)
 ###### Return value
 `Shape` object
+
+##### 'create_circle(self)'
+Take radius from user, check correct format (int) and create new object of Circle class.
+#####Returns value
+`Circle` object
+
+##### 'create_triangle(self)'
+Take side a, b, c from user, check correct format (int) and create new object of Triangle class.
+#####Returns value
+`Triangle` object
+
+##### 'create_rectangle(self)'
+Take side a, b from user, check correct format (int) and create new object of Rectangle class.
+#####Returns value
+`Rectangle` object
+
+##### 'create_square(self)'
+Take side a from user, check correct format (int) and create new object of Square class.
+#####Returns value
+`Square` object
+
+##### 'create_regular_pentagon(self)'
+Take side a from user, check correct format (int) and create new object of RegularPentagon class.
+#####Returns value
+`RegularPentagon` object
+
+##### 'is_digit(self, *args)'
+Raise Value Error if some argument is not digit.
+
+##### 'choose_shape(self)'
+Show options. User choose shape.
+#####Returns value
+`user_choice' - str
+
+##### 'create_shape(self, user_choice)'
+Depending on the user_choice, create proper geometrical figure.
+###### Return value
+`Shape` object
+
+##### 'get_data_to_table(self)'
+Create table row: insert data to list in proper order (according to the tittle).
+Add row list to bigger list with all rows.
+###### Return value
+`rows_list - list of lists`
+
+##### 'find_max_string(self, data, index)'
+Find max length of data in column.
+###### Return value
+`length longest string - int`
+
+##### 'draw_data_row(self, data, row)'
+Draw row with data (with proper width and format).
+###### Return value
+`row_data - string`
+
+##### 'draw_out_row(self, data, row)'
+Draw out row (with proper width and format).
+###### Return value
+`out_row - string`
 
 
 # Extra
